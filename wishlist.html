@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="public/css/style.css" />
+
+    <title>Wishlist</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <!-- ! Header Başlangıç Menu -->
+        <div class="row bgheader py-2">
+            <div class="col-12 px-5 d-flex justify-content-between flex-row">
+                <div class="header-connect d-none d-md-inline-block">
+                    <a href="tel:+90 123 456 7899">
+                        <i class="fa-solid fa-phone"></i>
+                        +90 123 456 7899
+                    </a>
+                    <a href="mailto:merveonalan2@gmail.com" class="ms-5">
+                        <i class="fa-solid fa-envelope"></i>
+                        merveonalan2@gmail.com
+                    </a>
+                </div>
+                <div class="header-socialMedia">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook me-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter me-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin me-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-github me-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ! Header Orta Menu  -->
+        <div class="row px-5 border-bottom py-3">
+            <div class="col-12 d-flex justify-content-between">
+                <div class="logo d-flex align-items-center">
+                    <a href="index.html">
+                        <img src="public/Images/logo.png" alt="E-SHOPPER" />
+                    </a>
+                    <select class="form-select1 ms-5 d-none d-lg-inline-block" aria-label="Default select example">
+                        <option value="1">ENG</option>
+                        <option value="2">TR</option>
+                    </select>
+                    <select class="form-select1 ms-3 d-none d-lg-inline-block" aria-label="Default select example">
+                        <option value="1">Dolar</option>
+                        <option value="2">TL</option>
+                    </select>
+                </div>
+                <div class="icons d-flex align-items-center">
+                    <a href="">
+                        <i class="fa-solid fa-user"></i>
+                        User
+                    </a>
+                    <a href="wishlist.html" class="d-none d-md-inline-block">
+                        <i class="fa-solid fa-star"></i>
+                        Whistlist
+                    </a>
+                    <a href="" class="d-none d-md-inline-block">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Checkout
+                    </a>
+                    <a href="cart.html" class="d-none d-md-inline-block">
+                        <div class="shopping-box">
+                            <div class="little-box">0</div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Cart
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <i class=" fa-solid fa-lock"></i>
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ! Header Son Menu -->
+        <nav class="navbar navbar-expand-lg px-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls=" navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="Orangemenu collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: orange" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">404</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="input-group w-25 mb-3 d-flex align-items-center">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                            aria-describedby="button-addon2" />
+                        <button class="btn bg-orange btn-hover" type="button" id="button-addon2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="mt-4">
+                <img class="w-100" src="public/Images/wishlist-add.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row px-5 pt-5 m-0">
+            <div class="col-lg-3 d-none d-md-block ">
+                <h4 class="text-orange text-center mb-4">CATEGORY</h4>
+                <div class="accordion accordion-flush border border-1 ms-4" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                SPORTSWEAR
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                MENS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                WOMENS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                KIDS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                FASHION
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                HOUSEHOLDS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                INTERIORS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                aria-controls="flush-collapseEight">
+                                CLOTHING
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                aria-controls="flush-collapseNine">
+                                BAGS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                aria-controls="flush-collapseTen">
+                                SHOES
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTen" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3">
+                    <img class="w-100 ps-4" src="public/Images/wishlist-add2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <h4 class="text-orange text-center mb-4">FEATURES ITEMS</h4>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/brown-jacket.jpg" class="card-img-top" height="600px"
+                                alt="Brown Jacket">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">56 $</h5>
+                                <p class="card-text">Brown Jacket</p>
+                                <a href="#" class="btn bg-grey btn-grey" id="addBtn">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/pink-trousers.jpg" class="card-img-top" height="600px"
+                                alt="Pink Trousers">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">65 $</h5>
+                                <p class="card-text">Pink Trousers</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/short-skirt.jpg" class="card-img-top" height="600px"
+                                alt="Short Skirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Short Skirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/t-shirt1.jpg" class="card-img-top" height="600px"
+                                alt="Grey Unisex T-shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Grey Unisex T-shirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/t-shirt2.jpg" class="card-img-top" height="600px"
+                                alt="White Unisex T-shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">White Unisex T-shirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/t-shirt3.jpg" class="card-img-top" height="600px"
+                                alt="Black Unisex T-shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Black Unisex T-shirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/t-shirt4.jpg" class="card-img-top" height="600px"
+                                alt="White Men T-shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">White Men T-shirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/trousers1.jpg" class="card-img-top" height="600px"
+                                alt="Dark Blue Men Trousers">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Dark Blue Men Trousers</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/trousers2.jpg" class="card-img-top" height="600px"
+                                alt="Light Blue Men Trousers">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Light Blue Men Trousers</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/womens1.jpg" class="card-img-top" height="600px"
+                                alt="White Women Bluz">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">White Women Bluz</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/womens2.jpg" class="card-img-top" height="600px"
+                                alt="Women Sweatshirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Women Sweatshirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/womens3.jpg" class="card-img-top" height="600px"
+                                alt="White Women T-shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">White Women T-shirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/womens4.jpg" class="card-img-top" height="600px"
+                                alt="Brown Women Sweatshirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Brown Women Sweatshirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/womens5.jpg" class="card-img-top" height="600px"
+                                alt="White Women Shirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">White Women Shirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/womens6.jpg" class="card-img-top" height="600px" alt="Women Skirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Women Skirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 26rem;">
+                            <img src="public/Images/womens7.jpg" class="card-img-top" height="600px"
+                                alt="Red Women Skirt">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                                <p class="card-text">Red Women Skirt</p>
+                                <a href="#" class="btn bg-grey btn-grey">
+                                    <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cart-list"></div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container-fluid bg-light-grey">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-6 col-sm-3">
+                        <div class="mt-4">
+                            <h3 class="">
+                                <span class="text-orange">E</span>
+                                -SHOPPER
+                            </h3>
+                            <p class="footer-paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae modi aut,
+                                totam
+                                esse tempore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-9">
+                        <div class="mt-2">
+                            <div class="footer-image">
+                                <img class="d-none d-xl-inline-block" src="public/Images/footer-photo1.png"
+                                    alt="Circle of hands">
+                                <img class="d-none d-sm-inline-block" src="public/Images/footer-photo2.png"
+                                    alt="Circle of hands">
+                                <img src="public/Images/footer-photo3.png" alt="Circle of hands">
+                                <img src="public/Images/footer-photo4.png" alt="Circle of hands">
+                                <img class="d-none d-sm-inline-block ms-5" src="public/Images/footer-photo5.png"
+                                    alt="Atlantic Ave Virginia Beach">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-8">
+                        <div class="d-flex justify-content-between">
+                            <div class="footer-links">
+                                <ul>
+                                    <li class="footer-title fw-bold">SERVICE</li>
+                                    <li>Online Help</li>
+                                    <li>Contact Us</li>
+                                    <li>Order Status</li>
+                                    <li>Change Location</li>
+                                    <li>FAQ's</li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <ul>
+                                    <li class="footer-title fw-bold">QUOCK SHOP</li>
+                                    <li>Online Help</li>
+                                    <li>Contact Us</li>
+                                    <li>Order Status</li>
+                                    <li>Change Location</li>
+                                    <li>FAQ's</li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <ul>
+                                    <li class="footer-title fw-bold">POLICIES</li>
+                                    <li>Online Help</li>
+                                    <li>Contact Us</li>
+                                    <li>Order Status</li>
+                                    <li>Change Location</li>
+                                    <li>FAQ's</li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <ul>
+                                    <li class="footer-title fw-bold">ABOUT SHOPPER</li>
+                                    <li>Online Help</li>
+                                    <li>Contact Us</li>
+                                    <li>Order Status</li>
+                                    <li>Change Location</li>
+                                    <li>FAQ's</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <h5 class="footer-title fs-5 text-center">ABOUT SHOPPER</h5>
+                            <div class="d-flex flex-column align-items-end">
+                                <div class="input-group mb-3 w-75 about-shopping">
+                                    <input type="text" class="form-control shadow-none" placeholder="Your email adress"
+                                        aria-label="Recipient's username">
+                                    <button class="btn bg-orange btn-hover" type="button">
+                                        <i class="fa-regular fa-circle-right text-white"></i>
+                                    </button>
+                                </div>
+                                <p class="footer-paragraph w-75 about-paragraph">
+                                    Get the most recent updates from our site and be updated your self...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="container-fluid bg-grey">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <p class="my-auto footer-copyright">Copyright © 2013 E-SHOPPER Inc. All rights reserved</p>
+                    <div class="d-flex">
+                        <p class="d-none d-sm-inline-block me-5 my-auto">Designed by
+                            <span>
+                                <ins class="text-orange">Themeum</ins>
+                            </span>
+                        </p>
+                        <button class="bg-orange btn rounded-0 chevron-up text-center" onclick="scrollToTop()">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="public/js/main.js"></script>
+    <script src="public/js/AddToCart.js"></script>
+    <script src="https://kit.fontawesome.com/384916567d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

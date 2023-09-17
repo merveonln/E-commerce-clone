@@ -1,0 +1,152 @@
+/* ! Navbar */
+
+.bgheader {
+  background-color: #e1e1e1;
+}
+
+.header-connect a {
+  text-decoration: none;
+  color: black;
+}
+.header-socialMedia a {
+  color: black;
+}
+.header-socialMedia a i {
+  font-size: 20px;
+}
+
+/* ! Header Orta Menü */
+.icons a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+}
+.icons a i {
+  font-size: 15px;
+}
+.form-select1 {
+  height: min-content;
+}
+
+/* ! Header Alt Menü */
+
+/* ! Login Sayfası */
+.or {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  color: white;
+  background-color: orange;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/*!Footer*/
+.bg-light-grey {
+  background-color: #f0f0e9;
+}
+.text-orange {
+  color: orange;
+}
+.footer-paragraph {
+  font-size: 12px;
+}
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 2px;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 73px !important;
+}
+
+.bg-orange {
+  background-color: orange !important;
+}
+
+.btn-hover:hover {
+  transform: scale(1.1);
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+.bg-grey {
+  background-color: #8080803d;
+}
+
+.chevron-up {
+  width: 40px;
+  height: 50px;
+}
+
+.footer-copyright {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 546px) {
+  .footer-links li {
+    font-size: 10px;
+  }
+
+  .footer-title {
+    font-size: 12px !important;
+  }
+
+  .about-shopping {
+    width: 22rem !important;
+  }
+
+  .about-paragraph {
+    width: 22rem !important;
+    text-align: center;
+  }
+}
+
+/*!Footer*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*!İndex*/
+.btn-grey:hover {
+  background-color: orange;
+  transform: scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.total i {
+  color: gray;
+}
+
+.shopping-box {
+  width: 75px;
+}
+
+.shopping-box .little-box {
+  width: 20px;
+  height: 20px;
+  background-color: darkred;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  float: right;
+}
