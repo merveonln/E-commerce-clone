@@ -30,9 +30,9 @@ document.querySelector(".showPassword").addEventListener("change", function () {
 
   if (this.checked) {
     girilenSifre.type = "text";
-    passwordToggle.innerHTML = "Şifreyi Gizle";
+    passwordToggle.innerHTML = "Hide Password";
   } else {
     girilenSifre.type = "password";
-    passwordToggle.innerHTML = "Şifreyi Göster";
+    passwordToggle.innerHTML = "Showw Password";
   }
 });
