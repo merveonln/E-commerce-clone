@@ -7,7 +7,7 @@ function writerProducts(e) {
                   <img
                     src=${e.image}
                     class="card-img-top mt-2"
-                    height="600px"
+                    height="600px",
                     alt=""
                   />
                   <div class="card-body text-center">
@@ -73,12 +73,10 @@ function writeCartItems() {
   productData.forEach((item) => {
     cartTable.innerHTML += `
           <tr>
-            <td class="p-3">
+            <td class="p-1">
               <div class="d-flex align-items-center">
-                <img height="100px" class="fotograf" src="${
-                  item.image
-                }" alt="product-image">
-                <div class="my-auto ms-5">
+                <img class="fotograf" src="${item.image}" alt="product-image">
+                <div>
                   <h5 class="fw-bold baslik">${item.name}</h5>
                   <h6 class="urunID">Web ID: 1089772</h6>
                 </div>
@@ -97,7 +95,7 @@ function writeCartItems() {
               </div>
             </td>
             <td class="text-center">
-              <div class="p-2">
+              <div>
                 <h5 class="toplamFiyat fw-bold d-inline-block">${
                   item.quantity * parseFloat(item.price)
                 }</h5>

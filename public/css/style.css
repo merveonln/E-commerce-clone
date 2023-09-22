@@ -152,13 +152,13 @@ body {
 }
 
 /* ! wishlist */
-.products img {
+.card-img-top {
   width: 300px;
   height: 300px;
   margin: auto;
 }
 .card {
-  width: 400px;
+  width: 350px;
   height: 500px;
   margin-bottom: 10px;
 }
@@ -166,4 +166,22 @@ body {
   position: absolute;
   right: 20px;
   bottom: 20px;
+}
+
+/*! cart */
+.baslik {
+  font-size: 0.75rem;
+}
+
+.fiyat {
+  font-size: 0.9rem;
+}
+
+.toplamFiyat {
+  font-size: 0.9rem;
+}
+
+.fotograf {
+  width: 50px;
+  height: 50px;
 }
