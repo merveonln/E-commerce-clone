@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const products = document.querySelector(".products");
 function writerProducts(e) {
   products.innerHTML += `
-    <div class="col-lg-4">
+    <div class="col-lg-4 kart">
                 <div class="card" >
                   <img
                     src=${e.image}
@@ -86,16 +86,23 @@ function scrollToTop() {
 }
 
 // ! Ürün Filtrelemek İçin Kullandığım Kodlar (Wishlist sayfasındaki inputun içerisine girildiğinde çalışıyor.)
-// Arama işlevini ekleyin
-// const searchInput = document.getElementById("inpt");
-// const searchButton = document.getElementById("button-addon2");
+// ! Ürün Filtrelemek İçin Kullandığım Kodlar (Wishlist sayfasındaki inputun içerisine girildiğinde çalışıyor.)
 
-// searchButton.addEventListener("click", function () {
-//   const searchTerm = searchInput.value.toLowerCase();
+const searchInput = document.getElementById("inpt");
 
-//   const filteredProducts = productsData.filter((product) =>
-//     product.title.toLowerCase().includes(searchTerm)
-//   );
+searchInput.addEventListener("keyup", function () {
+  let searchText = searchInput.value.toLowerCase();
 
-//   renderProducts(filteredProducts);
-// });
+  let kartlar = document.getElementsByClassName("kart");
+  for (let i = 0; i < kartlar.length; i++) {
+    let kart = kartlar[i];
+
+    let productName = kart.querySelector(".card-text").innerHTML.toLowerCase();
+
+    if (productName.indexOf(searchText) !== -1) {
+      kart.style.display = "block";
+    } else {
+      kart.style.display = "none";
+    }
+  }
+});
