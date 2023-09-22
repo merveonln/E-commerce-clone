@@ -170,7 +170,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody class="border">
+                    <tbody class="border products">
                         <!-- <tr>
                             <td class="p-3">
                                 <div class="d-flex align-items-center">
@@ -187,9 +187,9 @@
                             </td>
                             <td class="text-center butonlar">
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <button id="arttir" class="border-secondary me-1">+</button>
+                                    <button id="arttir" onclick="increaseValue" class="border-secondary me-1">+</button>
                                     <div class="adet border border-1 w-50 h-100 p-1 text-center">1</div>
-                                    <button id="azalt" class="border-secondary ms-1">-</button>
+                                    <button id="azalt" onclick="decreaseValue" class="border-secondary ms-1">-</button>
                                 </div>
                             </td>
                             <td class="text-center">
@@ -265,22 +265,29 @@
 
 
                 <div class="col-lg-6 border p-4">
-                    <input class="form-control rounded-0 mb-3" type="text" value="Card Sub Total"
-                        aria-label="Disabled input example" disabled readonly>
-
-                    <input class="form-control rounded-0 mb-3" type="text" value="Eco Tax"
-                        aria-label="Disabled input example" disabled readonly>
-
-                    <input class="form-control rounded-0 mb-3" type="text" value="Shipping Cost"
-                        aria-label="Disabled input example" disabled readonly>
-
-                    <input class="form-control rounded-0 mb-3" type="text" value="Total"
-                        aria-label="Disabled input example" disabled readonly>
-
-                    <div>
-                        <button class="btn bg-orange btn-hover text-white rounded-3 me-4 fw-bold">Update</button>
-                        <button class="btn bg-orange btn-hover text-white rounded-3 fw-bold">Check Out</button>
+                    <div class="total-prices">
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Card Sub Total</h6>
+                            <h6 id="totalPrice" class="m-0"></h6>
+                        </div>
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Eco Tax</h6>
+                            <h6 id="ecoTax" class="m-0"></h6>
+                        </div>
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Shipping Cost</h6>
+                            <h6 id="shippingCost" class="m-0"></h6>
+                        </div>
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Total</h6>
+                            <h6 id="result" class="m-0"></h6>
+                        </div>
+                        <div class="buttons mt-4">
+                            <button class="btn bg-orange text-white rounded-0 me-4 mb-2">Update</button>
+                            <button class="btn bg-orange text-white rounded-0">Check Out</button>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -415,8 +422,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="public/js/main.js"></script>
-    <script src="public//js/Cart.js"></script>
+    <script src="public/js/Cart.js"></script>
     <script src="https://kit.fontawesome.com/384916567d.js" crossorigin="anonymous"></script>
 </body>
 
