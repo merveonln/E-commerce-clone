@@ -113,6 +113,10 @@ hr {
     width: 22rem !important;
     text-align: center;
   }
+
+  .border-bottom {
+    padding: 10px;
+  }
 }
 
 /*!Footer*/
