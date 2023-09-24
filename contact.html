@@ -27,18 +27,10 @@
                     </a>
                 </div>
                 <div class="header-socialMedia">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook me-4"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter me-4"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin me-4"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-github me-4"></i>
-                    </a>
+                    <i class="fa-brands fa-facebook fs-4 me-4"></i>
+                    <i class="fa-brands fa-twitter fs-4 me-4"></i>
+                    <i class="fa-brands fa-linkedin fs-4 me-4"></i>
+                    <i class="fa-brands fa-github fs-4 me-4"></i>
                 </div>
             </div>
         </div>
@@ -60,7 +52,7 @@
                     </select>
                 </div>
                 <div class="icons d-flex align-items-center">
-                    <a href="">
+                    <a href="#" class="d-none d-md-inline-block">
                         <i class="fa-solid fa-user"></i>
                         User
                     </a>
@@ -68,17 +60,21 @@
                         <i class="fa-solid fa-star"></i>
                         Whistlist
                     </a>
-                    <a href="" class="d-none d-md-inline-block">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        Checkout
+                    <a href="cart.html">
+                        <div class="shopping-box">
+                            <div class="little-box">0</div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Cart
+                        </div>
                     </a>
-                    <a href="cart.html" class="d-none d-md-inline-block">
-                        <i class="fa-solid fa-cart-shopping "></i>
-                        Cart
+
+                    <a href="contact.html" class="d-none d-md-inline-block">
+                        <i class="fa-solid fa-address-book"></i>
+                        Contact
                     </a>
                     <a href="login.html">
-                        <i class=" fa-solid fa-lock"></i>
-                        Login
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Checkout
                     </a>
                 </div>
             </div>
@@ -133,8 +129,41 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">404</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-block d-lg-none" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu w-50">
+                                <li><a class="dropdown-item" href="#">Sportswear</a></li>
+                                <li><a class="dropdown-item" href="#">Mens</a></li>
+                                <li><a class="dropdown-item" href="#">Womens</a></li>
+                                <li><a class="dropdown-item" href="#">Kids</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                                <li><a class="dropdown-item" href="#">Households</a></li>
+                                <li><a class="dropdown-item" href="#">Interiors</a></li>
+                                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                <li><a class="dropdown-item" href="#">Bag</a></li>
+                                <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link d-inline-block d-sm-none" href="contact.html">
+                                <i class="fa-solid fa-address-book"></i>
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="wishlist.html" class="nav-link d-inline-block d-sm-none">
+                                <i class="fa-solid fa-star"></i>
+                                Whistlist
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-inline-block d-sm-none">
+                                <i class="fa-solid fa-user"></i>
+                                User
+                            </a>
                         </li>
                     </ul>
                     <div class="input-group w-25 mb-3 d-flex align-items-center">
