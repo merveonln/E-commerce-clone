@@ -115,7 +115,7 @@ hr {
   }
 
   .border-bottom {
-    padding: 10px;
+    padding: 3px !important;
   }
 }
 
